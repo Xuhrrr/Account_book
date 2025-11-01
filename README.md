@@ -74,7 +74,7 @@ python main.py
 ## 技术栈
 
 - **Python 3.8+**
-- **Tkinter**：GUI界面开发
+- **Pyside**：GUI界面开发
 - **NumPy/Pandas**：数据处理
 - **Scikit-learn**：机器学习预测
 - **Matplotlib**：数据可视化
