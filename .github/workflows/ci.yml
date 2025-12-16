@@ -23,8 +23,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt  # 假设你的依赖项在 requirements.txt 中
         pip install pytest # 安装测试框架
-
-    - name: Run tests with pytest
+    # 第四步： 进行单元测试检测两个子功能
+    - name: Run unit tests with pytest
       run: |
-        pytest
+        python3 -m pytest tests/test_get_records_by_date_range.py tests/test_predict_future.py -v
+    # 第五步：进行集成测试
+    - name: Run integration tests with pytest
+      run: |
+        python3 -m pytest tests_integration/ -v
     
